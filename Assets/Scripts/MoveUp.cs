@@ -15,7 +15,7 @@ public class MoveUp : MonoBehaviour
         startPos = transform.position;
         endPos.x = startPos.x;
         endPos.z = startPos.z;
-        endPos.y = startPos.y + 7.61f;
+        endPos.y = startPos.y + 8.32f;
 
         isMoving = true;
         StartCoroutine(Move());
