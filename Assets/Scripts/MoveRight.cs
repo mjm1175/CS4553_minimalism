@@ -20,7 +20,7 @@ public class MoveRight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(isMoving);
+        //print(isMoving);
         if (!isMoving){
             Destroy(gameObject);
         }
