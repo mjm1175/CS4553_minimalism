@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5294080916113062477}
   - component: {fileID: -9142014197926300013}
   - component: {fileID: 9001729238095969285}
+  - component: {fileID: -2325159918961739841}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Obstacle
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.9719626, g: 1, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -145,3 +146,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
+--- !u!114 &-2325159918961739841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7643239970351904877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb636f58bcd30f2498da9c4a9ba598e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dangerous: 0

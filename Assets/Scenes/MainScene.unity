@@ -366,7 +366,7 @@ GameObject:
   - component: {fileID: 565739368}
   - component: {fileID: 565739367}
   m_Layer: 5
-  m_Name: Button
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,6 +919,14 @@ PrefabInstance:
     - target: {fileID: 7643239970351904878, guid: 6106249a95c2bbc4bb9d0a35db2ef8ad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643239970351904879, guid: 6106249a95c2bbc4bb9d0a35db2ef8ad, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6162656
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643239970351904879, guid: 6106249a95c2bbc4bb9d0a35db2ef8ad, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6106249a95c2bbc4bb9d0a35db2ef8ad, type: 3}
