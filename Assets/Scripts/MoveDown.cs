@@ -9,7 +9,7 @@ public class MoveDown : MonoBehaviour
     private Vector3 startPos;
     private Vector3 endPos;
     private bool isMoving;
-    public float speed = 5.0f;
+    public float speed = 10.0f;
     void Start()
     {
         startPos = transform.position;
@@ -25,16 +25,19 @@ public class MoveDown : MonoBehaviour
     void Update()
     {
         //print(isMoving);
-        if (!isMoving){
+        if (!isMoving)
+        {
             Destroy(gameObject);
         }
     }
 
-    IEnumerator Move(){
+    IEnumerator Move()
+    {
         float timeElapsed = 0.0f;
-        while (timeElapsed < 1.0){
+        while (timeElapsed < 1.0)
+        {
             transform.position = Vector3.Lerp(startPos, endPos, timeElapsed);
-            timeElapsed += Time.deltaTime * (1.0f/speed);
+            timeElapsed += Time.deltaTime * (1.0f / speed);
             yield return null;
         }
         isMoving = false;

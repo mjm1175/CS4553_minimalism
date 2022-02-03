@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoveUp : MonoBehaviour
 {
     // Start is called before the first frame update
-
     private Vector3 startPos;
     private Vector3 endPos;
     private bool isMoving;
@@ -25,16 +24,19 @@ public class MoveUp : MonoBehaviour
     void Update()
     {
         //print(isMoving);
-        if (!isMoving){
+        if (!isMoving)
+        {
             Destroy(gameObject);
         }
     }
 
-    IEnumerator Move(){
+    IEnumerator Move()
+    {
         float timeElapsed = 0.0f;
-        while (timeElapsed < 1.0){
+        while (timeElapsed < 1.0)
+        {
             transform.position = Vector3.Lerp(startPos, endPos, timeElapsed);
-            timeElapsed += Time.deltaTime * (1.0f/speed);
+            timeElapsed += Time.deltaTime * (1.0f / speed);
             yield return null;
         }
         isMoving = false;

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class CreateObstacles : MonoBehaviour
 {
-    private float lowRangeX = -7.36f;
-    private float highRangeX = 7.39f;
-    private Vector3 rangeRange = new Vector3(0.0f, 4.64f, 0.0f);
+    float lowRangeX = -8f;
+    float highRangeX = 8f;
+    float height = 5f;
 
     public GameObject obstacle;
 
@@ -19,17 +19,18 @@ public class CreateObstacles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    IEnumerator Create(){
-        while(true)
+    IEnumerator Create()
+    {
+        while (true)
         {
-            float thisX = Random.Range(lowRangeX, highRangeX);
+            float currX = Random.Range(lowRangeX, highRangeX);
 
-            Instantiate(obstacle, new Vector3(thisX, rangeRange.y, rangeRange.z), transform.rotation);
+            Instantiate(obstacle, new Vector3(currX, height, 0), transform.rotation);
 
-            float timeBetween = Random.Range(1.0f, 5.0f);
+            float timeBetween = Random.Range(0.5f, 4.0f);
 
             yield return new WaitForSeconds(timeBetween);
         }
